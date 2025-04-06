@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.header {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   }
+        .product-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px;
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            margin-top: 0.5em;
+        }
+
+        
+        @media (max-width: 768px) {
+            .product-section {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-section {
+                grid-template-columns: 1fr; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>My Website</h1>
+    <p>A website created by me.</p>
+  </div>
+
+  <div class="navbar">
+    <a href="Home-About.html">Home</a>
+    <a href="Product-only.html">Product</a>
+    <a href="Home-About.html" style="float:right;">About</a>
+  </div>
+
+    <section class="product-section">
+        <div class="product-card">
+            <img src="Classic.jpg" alt="Classic Watch">
+            <h3>Product 1</h3>
+            <p>Classic watches, often called dress watches, are characterized by their timeless, elegant designs, usually featuring a round case, three-hand movement, and a minimalist dial, often in white, silver, or black..</p>
+            <p><strong>Price:</strong> $290.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Smart.jpg" alt="Smart Watch">
+            <h3>Product 2</h3>
+            <p>smartwatch is a wearable computer, resembling a wristwatch, that offers enhanced functionality beyond basic timekeeping, often integrating with a smartphone for features like notifications, fitness tracking, and communication.</p>
+            <p><strong>Price:</strong> $304.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Aesthetic.jpg" alt="Aesthetic Watch">
+            <h3>Product 3</h3>
+            <p>Aesthetic watch design encompasses various elements beyond functionality, including materials, shapes, colors, and dial designs, aiming to create a visually appealing and stylish timepiece.</p>
+            <p><strong>Price:</strong> $250.00</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Hike.jpg" alt="Hiker Watch">
+            <h3>Product 4</h3>
+            <p>hiking watch is a rugged, multi-functional timepiece designed to assist outdoor adventurers. It typically includes features such as: GPS navigation, Altimeter, Barometer, Compass, Thermometer, Water and shock resistance, also offer heart rate monitoring, solar charging, and smartphone connectivity.</p>
+            <p><strong>Price:</strong> $109.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="Rolex.jpg" alt="Luxury Watch">
+            <h3>Product 5</h3>
+            <p>Luxury watches are not just timepieces, but symbols of artistry, craftsmanship, and often, wealth and success.</p>
+            <p><strong>Price:</strong> $1049.99</p>
+        </div>
+
+
+
+    </section>
+
+</body>
+</html>
